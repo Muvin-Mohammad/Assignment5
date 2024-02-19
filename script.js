@@ -1,4 +1,3 @@
-
 const goToTicket = document.getElementById('click-ticket');
 goToTicket.addEventListener('click', function (event) {
     const ticket = document.getElementById("ticket");
@@ -9,7 +8,6 @@ goToTicket.addEventListener('click', function (event) {
         behavior: "smooth"
     });
 });
-
 
 
 const phoneNumber = document.getElementById('phone-number');
@@ -50,7 +48,6 @@ function validationPhoneNumber() {
 }
 
 
-
 let selectedSeats = [];
 let couponApplied;
 document.getElementById('seats-container').addEventListener('click', function (event) {
@@ -69,7 +66,7 @@ document.getElementById('seats-container').addEventListener('click', function (e
             }
         }
 
-        // Increase the number of Selected Seats
+
         let selectedSeatNumber = selectedSeats.length;
         setTextById('seats-selected', selectedSeatNumber)
 
@@ -124,7 +121,6 @@ function selectSeat(id) {
     availableSeat--;
     setTextById('available-seat', availableSeat);
 
-    
     addSeatToList(id);
 }
 
@@ -163,8 +159,6 @@ function removeSeat(id) {
     availableSeat++;
     setTextById('available-seat', availableSeat);
 
-
-    
     removeSeatFromList(id);
 
 }
